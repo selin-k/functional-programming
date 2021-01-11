@@ -28,9 +28,9 @@ Any recursive algorithm can be a lambda calculus algorithm and both can be repre
 
 E..g in imperative langs:
 ```java
-int i = 1;
-for (i = 1; i <= 4; i++) {
-  i *= i;
+int val = 1;
+for (int i = 1; i <= 4; i++) {
+  val *= i;
 }
 ```
 functional:

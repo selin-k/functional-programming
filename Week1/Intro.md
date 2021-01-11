@@ -1,5 +1,5 @@
 # [Functional Programming First Lecture](https://en.wikipedia.org/wiki/Functional_programming)
-[Module website]()
+
 **History**
 - David Hilbert - There should be a way to verify mathematical statements that are true.
 - Kurt Godel - Epic paradox//Incompletenes theorem states that there are some statements in Mathematics that cannot be proved. E.g. "This statement is not provable". 

@@ -1,6 +1,6 @@
 # Definitions & Functions
 **How do we write programs in Haskell?**
-Haskell is a standardizes language, most recent one is 2010.
+Haskell is a standardized language, most recent one is 2010.
 GHC is a popular implementation of it. It uses many extensions on top of Haskell 2010.
  
 **Compiling**

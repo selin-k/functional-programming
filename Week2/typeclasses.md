@@ -18,6 +18,8 @@ E.g. the `+` function in Haskell:
 ```
 
 Num is a type class and this means that a must be a type that is an *instance of Num*.
+For a type to satisfy a type class constraint, it must implement the interface that is described by the type class.
+E.g. for some type `a`, constrained by a certain type class constraint, gives us the knowledge of what functions and operations that type will support if it is instantiated.
 
 # Built-in type classes
 
@@ -144,5 +146,19 @@ addThree :: Num a => a -> a -> a
 addThree x y = x + y
 
 ```
+
+Abstractions are often represented by type classes. Two examples of this we consider for the following exercises are algebraic structures known as semigroups and monoids.
+
+**Semigroups**
+---
+A semigroup is any type which has an associative, binary operation. We can define a type class for this where the binary operator is called <>.
+A binary operation is a function that takes two arguments. The binary operation must be closed – that is, its two arguments and its return value but must all be values from the same set. A semigroup must also obey one law: the law of associativity.
+
+`x <> (y <> z) == (x <> y) <> z`
+
+Haskell's type class mechanism only allows one instance of each type class for each type.
+
+**Monoids**
+
 
 

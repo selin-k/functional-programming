@@ -18,6 +18,19 @@ length of the tail of the list. Ekcetera, ekcetera ...
 ---
 
 
+**The one and only, holy, quicksort in Haskell**
+
+```hs
+quicksort :: (Ord a) => [a] -> [a]
+quicksort [] = []
+quicksort (x:xs) =
+    let smallerSorted = quicksort [a | a <- xs, a <= x]
+        biggerSorted = quicksort [a | a <- xs, a > x]
+    in smallerSorted ++ [x] ++ biggerSorted
+```
+
+---
+
 **Calculate the nth factorial**
 
 Non-recursive:

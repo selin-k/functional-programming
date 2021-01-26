@@ -137,6 +137,16 @@ If you want to take the first 10 even numbers:
 
 `take 10 [n | n <- [0..100], n 'mod' 2 == 0]`
 
+List comprehensions can also be used to generate lists from other lists, just like set
+comprehensions are used to generate sets from other sets. For example, the following
+expression is a list comprehension which generates the list of numbers that are double
+the numbers from 0 to 10:
+
+`2*n | n <- [0..10]`
+The `n <- [0..10]` part in this example is referred to as a generator. Given some
+list on the right of `<-`, it loops through all the elements of that list and binds them
+to n one after the other. The part on the left of the | is what is used to generate an
+element of the resulting list, for all values obtained from the right of the |.
 
 
 **Function for length of lists**

@@ -5,6 +5,18 @@ How do we express loops without mutable state?
 What is 'mutable state' referring to?
 We can't change state, things are evaluated through reduction of definitions.
 
+---
+
+**Thinking recursively**
+
+Usually you define an edge case and then you define a function that does something between some element
+and the function applied to the rest. It doesn't matter if it's a list, a tree or any other data structure.
+A sum is the first element of a list plus the sum of the rest of the list. A product of a list is the
+first element of the list times the product of the rest of the list. The length of a list is one plus the
+length of the tail of the list. Ekcetera, ekcetera ...
+
+---
+
 
 **Calculate the nth factorial**
 
